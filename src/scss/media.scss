@@ -1,0 +1,131 @@
+@import "colors";
+@import "mixins";
+@import "vars";
+
+@media (max-width: 1439px){
+  .main{
+    &-wrapper{
+      padding: 40px 32px;
+    }
+  }
+  .card{
+    min-width: 185px;
+  }
+}
+@media (max-width: 1199px){
+  .card{
+    width: calc(33.3333% - 50px);
+  }
+}
+@media (max-width: 991px){
+  .card{
+    width: calc(50% - 50px);
+  }
+}
+@media (max-width: 767px){
+  .header-aside-open{
+    left: $sidebar-width;
+  }
+  .header{
+    &_logo{
+      display: none;
+    }
+    &-overlay.active{
+      left: $sidebar-width ;
+      opacity: 1;
+      visibility: visible;
+    }
+    &_wrapper{
+      justify-content: space-between;
+      padding: 0 15px;
+    }
+    &_aside{
+      left: -$sidebar-width;
+      overflow-y: auto;
+    }
+    &_panel{
+      margin-right: 0;
+    }
+    &_mob-panel{
+      @include flex-center;
+    }
+    &_nav-box{
+      height: auto;
+      overflow: initial;
+    }
+  }
+  .footer{
+    padding-bottom: 20px;
+    &-links{
+      position: static;
+      width: auto;
+      padding: 0 15px;
+      &_list{
+        border-top-color: $dash-heading;
+      }
+    }
+  }
+  .main{
+    height: auto;
+    padding: 0 15px;
+    &-wrapper{
+      padding: 40px 0;
+    }
+  }
+  .page-wrapper{
+    padding-left: 0;
+    height: auto;
+  }
+  .dashboard{
+    &_heading{
+      flex-wrap: wrap;
+      justify-content: center;
+      &-title{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    }
+    &_filter{
+      justify-content: center;
+    }
+  }
+  .popup{
+    width: 300px;
+    margin-left: -150px;
+    padding: 20px;
+    top:50%;
+    transform: translate(0, -50%);
+    &_close{
+      right: 20px;
+    }
+  }
+  .page-wrapper{
+    transition: $transition-animation;
+    left: 0;
+    &-aside-open{
+      left: $sidebar-width;
+    }
+  }
+  .dashboard{
+    &_cards{
+      margin: 0 -15px;
+    }
+  }
+  .card{
+    width: calc(50% - 30px);
+    margin: 0 15px 25px;
+  }
+}
+@media (max-width: 480px){
+  .dashboard{
+    &_cards{
+      margin: 0 -5px;
+    }
+  }
+  .card{
+    margin: 0 5px 25px;
+    width: calc(50% - 10px);
+    min-width: initial;
+  }
+}

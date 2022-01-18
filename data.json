@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "id": "1",
+      "bg": "linear-gradient(180deg,#39579a 0,#2c4479 97.23%)",
+      "soc-img": "https://hstest.ru/test-work/sociotrack-info/img/cart-icons/Facebook.svg",
+      "followers": "1,701",
+      "activity": true,
+      "activityNumber": "+4",
+      "activityClass": "go-up",
+      "avatar": "https://hstest.ru/test-work/sociotrack-info/img/avatar/icon1.png",
+      "soc-name": "Facebook",
+      "soc-link-name": "@abhisek.daas",
+      "soc-link-url": "#",
+      "date": "18.01.2022"
+    }
+  ]
+}
