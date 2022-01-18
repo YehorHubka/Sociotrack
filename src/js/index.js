@@ -48,21 +48,21 @@ $(document).ready(function () {
             <div class="card">
                <div class="card_info" style="background: ${item.bg}">
                   <div class="card_info-icon">
-                     <img class="card_info-icon-image" src="${item.soc_img}" alt="">
+                     <img class="card_info-icon-image" src="${item.socImg}" alt="">
                   </div>
                   <div class="card_info-text">
-                     <div class="card_info-text-number">1,701</div>
+                     <div class="card_info-text-number">${item.followers}</div>
                      <div class="card_info-text-under">FOLLOWERS</div>
                   </div>
-                  <div class="card_info-value">+4</div>
+                  <div class="card_info-value ${item.activityClass}">${item.activityNumber}</div>
                </div>
                <div class="card_person">
                   <div class="card_person-ava">
-                     <img class="card_person-ava-image" src="img/avatars/user1.png" alt="">
+                     <img class="card_person-ava-image" src="${item.avatar}" alt="">
                   </div>
                   <div class="card_person-info">
-                     <div class="card_person-info-social">Facebook</div>
-                     <a href="#" class="card_person-info-link">@abhisek.daaserwerwerwededsr</a>
+                     <div class="card_person-info-social">${item.socName}</div>
+                     <a href="${item.socLinkUrl}" class="card_person-info-link">${item.socLinkName}</a>
                   </div>
                </div>
             </div>
