@@ -6,7 +6,7 @@ const htmlmin = require('gulp-htmlmin')
 const del = require('del')
 const concat = require('gulp-concat')
 const autoprefixer = require('gulp-autoprefixer')
-const uglify = require('gulp-uglify')
+const uglify = require('gulp-uglify-es').default
 const imagemin = require('gulp-imagemin')
 const sync = require('browser-sync').create()
 
@@ -47,8 +47,8 @@ function js() {
       'src/libs/jquery/dist/jquery.min.js',
       'src/js/**.js',
    ])
-      //.pipe(uglify())
       .pipe(concat('common.js'))
+      .pipe(uglify())
       .pipe(dest('./dist/js/'))
 }
 

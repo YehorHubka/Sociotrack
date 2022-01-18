@@ -9,11 +9,11 @@ $(document).ready(function () {
    //popup opening
    $('.popup_add-social-opener').on('click', function () {
       $('.popup-overlay, .popup_add-social').fadeIn()
-   })
+   });
    //popup closing
    $('.popup_close, .popup-overlay').on('click', function () {
       $('.popup, .popup-overlay').fadeOut()
-   })
+   });
 
    //toggle-mnu
    $(".toggle_mnu").on('click', function() {
@@ -28,24 +28,20 @@ $(document).ready(function () {
       $('.page-wrapper').removeClass('page-wrapper-aside-open');
       $('.header').removeClass('header-aside-open');
       $('.header-overlay').removeClass('active');
-   })
+   });
 
-   //fetch by url from server
+   //get json by url from server
+   let url = 'https://my-json-server.typicode.com/YehorHubka/Sociotrack/items';
 
-   const jsonUrl = 'https://my-json-server.typicode.com/YehorHubka/Sociotrack/items'
-
-   $.getJSON( jsonUrl, function( data ) {
-
-      let items = []
-      let cardItem = ''
+   $.getJSON( url, function( data ) {
 
       $.each( data, function( key, item ) {
 
-         cardItem = `
-            <div class="card" data-date="${item.date}">
+         let cardItem = `
+            <div class="card">
                <div class="card_info ${ item.isBrightItem ? 'bright-bg' : '' }" style="background: ${item.bg}">
                   <div class="card_info-icon">
-                     ${item.socImg}
+                     <img class="card_info-icon-image" src="${item.socImg}" alt="">
                   </div>
                   <div class="card_info-text">
                      <div class="card_info-text-number">${item.followers}</div>
@@ -63,14 +59,12 @@ $(document).ready(function () {
                   </div>
                </div>
             </div>
-         `
-         $('.dashboard_cards').append(cardItem)
+         `;
 
-      })
+         $('.dashboard_cards').append(cardItem);
 
-      console.log(items)
+      });
 
-
-   })
+   });
 
 })
