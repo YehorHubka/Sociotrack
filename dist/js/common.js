@@ -48,7 +48,7 @@ $(document).ready(function () {
             <div class="card" data-date="${item.date}">
                <div class="card_info ${ item.isBrightItem ? 'bright-bg' : '' }" style="background: ${item.bg}">
                   <div class="card_info-icon">
-                     <img class="card_info-icon-image" src="${item.socImg}" alt="">
+                     ${item.socImg}
                   </div>
                   <div class="card_info-text">
                      <div class="card_info-text-number">${item.followers}</div>
