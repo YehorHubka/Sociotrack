@@ -35,18 +35,29 @@ $(document).ready(function () {
 
    //fetch by url from server
 
-   const jsonUrl = 'https://my-json-server.typicode.com/YehorHubka/Sociotrack/db'
+   const jsonUrl = 'https://my-json-server.typicode.com/YehorHubka/Sociotrack/items'
 
    $.getJSON( jsonUrl, function( data ) {
+
       let items = [];
       $.each( data, function( key, val ) {
-         items.push( "<li id='" + key + "'>" + val + "</li>" )
+
+
+         items.push( val.id)
+
+
+
+         $.each( val, function( key2, val2 ) {
+            console.log(key2, val2)
+         })
+
+
+
       })
 
-      $( "<ul/>", {
-         "class": "my-new-list",
-         html: items.join( "" )
-      }).prependTo( ".main" )
+      console.log(items)
+
+
    })
 
 })

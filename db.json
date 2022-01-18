@@ -13,6 +13,20 @@
       "soc-link-name": "@abhisek.daas",
       "soc-link-url": "#",
       "date": "18.01.2022"
+    },
+    {
+      "id": "2",
+      "bg": "linear-gradient(180deg, #059FF5 0%, #059FC3 100%), #059FF5",
+      "soc-img": "https://hstest.ru/test-work/sociotrack-info/img/cart-icons/Twitter.svg",
+      "followers": "1,567",
+      "activity": true,
+      "activityNumber": "-3",
+      "activityClass": "go-down",
+      "avatar": "https://hstest.ru/test-work/sociotrack-info/img/avatar/icon2.png",
+      "soc-name": "Twitter",
+      "soc-link-name": "@wholetthedasout",
+      "soc-link-url": "#",
+      "date": "10.01.2022"
     }
   ]
 }
