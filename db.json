@@ -78,7 +78,7 @@
     {
       "id": "6",
       "bg": "linear-gradient(180deg, #FFFE00 0%, #F3F200 96.43%)",
-      "isBrightItem": "bright-item",
+      "isBrightItem": "bright-bg",
       "socImg": "https://hstest.ru/test-work/sociotrack-info/img/cart-icons/Snapchat-color.svg",
       "followers": "8,780",
       "users": "SNAP SCORE",
@@ -108,7 +108,7 @@
     },
     {
       "id": "8",
-      "bg": "linear-gradient(180deg, #059FF5 0%, #059FC3 100%), #059FF5",
+      "bg": "linear-gradient(180deg, #00B687 0%, #008E87 100%)",
       "socImg": "https://hstest.ru/test-work/sociotrack-info/img/cart-icons/Vine.svg",
       "followers": "3,093",
       "users": "LOOPS",
