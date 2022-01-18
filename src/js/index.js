@@ -36,19 +36,38 @@ $(document).ready(function () {
 
    $.getJSON( jsonUrl, function( data ) {
 
-      let items = [];
-      $.each( data, function( key, val ) {
+      let items = []
+      let cardItem = ''
+
+      $.each( data, function( key, item ) {
 
 
-         items.push( val.id)
+         //items.push( val.id)
 
-
-
-         $.each( val, function( key2, val2 ) {
-            console.log(key2, val2)
-         })
-
-
+         cardItem = `
+            <div class="card">
+               <div class="card_info" style="background: ${item.bg}">
+                  <div class="card_info-icon">
+                     <img class="card_info-icon-image" src="${item.soc_img}" alt="">
+                  </div>
+                  <div class="card_info-text">
+                     <div class="card_info-text-number">1,701</div>
+                     <div class="card_info-text-under">FOLLOWERS</div>
+                  </div>
+                  <div class="card_info-value">+4</div>
+               </div>
+               <div class="card_person">
+                  <div class="card_person-ava">
+                     <img class="card_person-ava-image" src="img/avatars/user1.png" alt="">
+                  </div>
+                  <div class="card_person-info">
+                     <div class="card_person-info-social">Facebook</div>
+                     <a href="#" class="card_person-info-link">@abhisek.daaserwerwerwededsr</a>
+                  </div>
+               </div>
+            </div>
+         `
+         $('.dashboard_cards').append(cardItem)
 
       })
 

@@ -3,29 +3,29 @@
     {
       "id": "1",
       "bg": "linear-gradient(180deg,#39579a 0,#2c4479 97.23%)",
-      "soc-img": "https://hstest.ru/test-work/sociotrack-info/img/cart-icons/Facebook.svg",
+      "soc_img": "https://hstest.ru/test-work/sociotrack-info/img/cart-icons/Facebook.svg",
       "followers": "1,701",
       "activity": true,
       "activityNumber": "+4",
       "activityClass": "go-up",
       "avatar": "https://hstest.ru/test-work/sociotrack-info/img/avatar/icon1.png",
-      "soc-name": "Facebook",
-      "soc-link-name": "@abhisek.daas",
-      "soc-link-url": "#",
+      "soc_name": "Facebook",
+      "soc_link_name": "@abhisek.daas",
+      "soc_link_url": "#",
       "date": "18.01.2022"
     },
     {
       "id": "2",
       "bg": "linear-gradient(180deg, #059FF5 0%, #059FC3 100%), #059FF5",
-      "soc-img": "https://hstest.ru/test-work/sociotrack-info/img/cart-icons/Twitter.svg",
+      "soc_img": "https://hstest.ru/test-work/sociotrack-info/img/cart-icons/Twitter.svg",
       "followers": "1,567",
       "activity": true,
       "activityNumber": "-3",
       "activityClass": "go-down",
       "avatar": "https://hstest.ru/test-work/sociotrack-info/img/avatar/icon2.png",
-      "soc-name": "Twitter",
-      "soc-link-name": "@wholetthedasout",
-      "soc-link-url": "#",
+      "soc_name": "Twitter",
+      "soc_link-name": "@wholetthedasout",
+      "soc_link_url": "#",
       "date": "10.01.2022"
     }
   ]
