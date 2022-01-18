@@ -44,20 +44,17 @@ $(document).ready(function () {
 
       $.each( data, function( key, item ) {
 
-
-         //items.push( val.id)
-
          cardItem = `
-            <div class="card">
-               <div class="card_info" style="background: ${item.bg}">
+            <div class="card" data-date="${item.date}">
+               <div class="card_info ${ item.isBrightItem ? 'bright-item' : '' }" style="background: ${item.bg}">
                   <div class="card_info-icon">
                      <img class="card_info-icon-image" src="${item.socImg}" alt="">
                   </div>
                   <div class="card_info-text">
                      <div class="card_info-text-number">${item.followers}</div>
-                     <div class="card_info-text-under">FOLLOWERS</div>
+                     <div class="card_info-text-under">${item.users}</div>
                   </div>
-                  <div class="card_info-value ${item.activityClass}">${item.activityNumber}</div>
+                  <div class="card_info-value ${item.activity ? 'show' : 'hide'} ${item.activityClass}">${item.activityNumber}</div>
                </div>
                <div class="card_person">
                   <div class="card_person-ava">
