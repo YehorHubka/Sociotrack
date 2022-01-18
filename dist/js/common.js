@@ -35,7 +35,7 @@ $(document).ready(function () {
 
    //fetch by url from server
 
-   const jsonUrl = 'https://hstest.ru/test-work/sociotrack-info/data.json'
+   const jsonUrl = 'https://my-json-server.typicode.com/YehorHubka/Sociotrack/db'
 
    $.getJSON( jsonUrl, function( data ) {
       let items = [];
@@ -46,7 +46,7 @@ $(document).ready(function () {
       $( "<ul/>", {
          "class": "my-new-list",
          html: items.join( "" )
-      }).appendTo( ".main" )
+      }).prependTo( ".main" )
    })
 
 })
