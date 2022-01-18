@@ -78,7 +78,7 @@
     {
       "id": "6",
       "bg": "linear-gradient(180deg, #FFFE00 0%, #F3F200 96.43%)",
-      "isBrightItem": "bright-bg",
+      "isBrightItem": true,
       "socImg": "https://hstest.ru/test-work/sociotrack-info/img/cart-icons/Snapchat-color.svg",
       "followers": "8,780",
       "users": "SNAP SCORE",
