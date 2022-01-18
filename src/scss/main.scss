@@ -8,8 +8,15 @@ body{
   margin: 0;
   background: $main-bg-color;
 }
-*{@include box-sizing;}
-a{transition: $transition-animation;}
+.no-scroll{
+  overflow-x: hidden;
+}
+*{
+  @include box-sizing;
+}
+a{
+  transition: $transition-animation;
+}
 .page-wrapper{
   position: relative;
   width: 100%;

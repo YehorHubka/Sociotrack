@@ -21,6 +21,7 @@ $(document).ready(function () {
       $('.page-wrapper').toggleClass('page-wrapper-aside-open');
       $('.header').toggleClass('header-aside-open');
       $('.header-overlay').toggleClass('active');
+      $('body').addClass('no-scroll');
    });
    //aside mnu close by overlay
    $('.header-overlay').on('click', function () {
@@ -28,6 +29,7 @@ $(document).ready(function () {
       $('.page-wrapper').removeClass('page-wrapper-aside-open');
       $('.header').removeClass('header-aside-open');
       $('.header-overlay').removeClass('active');
+      $('body').removeClass('no-scroll');
    });
 
    //get json by url from server
